@@ -12,3 +12,22 @@ $(function(){
             }
         });
 });
+
+
+// Dynamically Change Data in datatable 
+
+
+
+
+$(document).ready(function()
+{
+$("table > tbody > tr> td ").each(function () {
+   var x= $(this).text();
+
+   if(x =='MAIN' )
+   {
+  $(this).closest('tr').find('.yesno').closest('td').html('');
+   }
+  
+ });
+});
